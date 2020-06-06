@@ -128,7 +128,7 @@ body {
 }
 
 .heading-primary {
-  color: red;
+  color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -222,12 +222,12 @@ body {
 }
 
 .btn--white {
-  background-color: red;
+  background-color: #fff;
   color: #777;
 }
 
 .btn--white::after {
-  background-color: red;
+  background-color: #fff;
 }
 
 .btn::after {
