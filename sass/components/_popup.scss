@@ -8,8 +8,7 @@
     z-index: 3000;
     opacity: 0;
     visibility: hidden;
-    transition: all .3s;
-    
+    transition: all 0.3s;
 
     &__content {
         @include absCenter;
@@ -20,8 +19,8 @@
         overflow: hidden;
         display: table;
         opacity: 0;
-        transform: translate(-50%, -50%) scale(.25);
-        transition: all .4s .2s;
+        transform: translate(-50%, -50%) scale(0.25);
+        transition: all 0.4s 0.2s;
     }
     &__left {
         width: 33.33333%;
@@ -63,14 +62,22 @@
             font-size: 3rem;
             text-decoration: none;
             display: inline-block;
-            transition: all .2s;
+            transition: all 0.2s;
             line-height: 1;
         }
         &:hover {
             color: $color-primary;
         }
     }
-    @include respond(tab-port){
+    &__cancel {
+        float: right;
+    }
+    @include respond(tab-land) {
+        width: 100%;
+        position: absolute;
+        top: 30rem;
+        left: 0;
+        
         &__content {
             @include absCenter;
             width: 90%;
@@ -80,14 +87,15 @@
             overflow: hidden;
             display: block;
             opacity: 0;
-            transform: translate(-50%, -50%) scale(.25);
-            transition: all .4s .2s;
+            transform: translate(-50%, -50%) scale(0.25);
+            transition: all 0.4s 0.2s;
         }
         &__left {
             width: 100%;
             display: block;
         }
         &__right {
+            padding-top: 2rem;
             width: 100%;
             display: block;
             padding: 3rem 5rem;
@@ -96,6 +104,9 @@
             float: left;
             width: 50%;
             height: auto;
+            @include respond(phone) {
+                width: 100%;
+            }
         }
         &__text {
             font-size: 1.4rem;
@@ -123,7 +134,7 @@
                 font-size: 3rem;
                 text-decoration: none;
                 display: inline-block;
-                transition: all .2s;
+                transition: all 0.2s;
                 line-height: 1;
             }
             &:hover {
