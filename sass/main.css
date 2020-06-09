@@ -338,6 +338,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 75em) {
+  .row {
+    padding: 0 4rem;
+  }
+}
+
 @media (max-width: 56.25em) {
   .row {
     max-width: 60rem;
@@ -418,6 +424,12 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 37.5em) {
+  .btn, .btn:link, .btn:visited {
+    padding: .5rem 1rem;
+  }
 }
 
 .btn:hover {
@@ -1436,6 +1448,13 @@ body {
   background-size: 250%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media (max-width: 37.5em) {
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 2rem;
+    padding: 0;
+  }
 }
 
 .navigation__link:link span, .navigation__link:visited span {
