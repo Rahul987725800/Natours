@@ -161,9 +161,10 @@
         font-weight: 100;
     }
 
-
-
-    @include respond(tab-land) {
+    // @include respond(tab-port)
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) // if we can't hover we want book button on front
+     {
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
